@@ -20,7 +20,18 @@
 		0204F2692CF90A240064E4A2 /* CustomTabButtonViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0204F2682CF90A240064E4A2 /* CustomTabButtonViewModel.swift */; };
 		0204F26B2CF90C0F0064E4A2 /* Color+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0204F26A2CF90C0F0064E4A2 /* Color+Extensions.swift */; };
 		0204F26E2CF90F8A0064E4A2 /* MockTabBarItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0204F26D2CF90F8A0064E4A2 /* MockTabBarItems.swift */; };
+		0204F2762CF92F680064E4A2 /* CustomTabBar_SwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0204F2752CF92F680064E4A2 /* CustomTabBar_SwiftUITests.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0204F2772CF92F680064E4A2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0204F23D2CF8EA450064E4A2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0204F2442CF8EA450064E4A2;
+			remoteInfo = CustomTabBar_SwiftUI;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		0204F2452CF8EA450064E4A2 /* CustomTabBar_SwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CustomTabBar_SwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -37,10 +48,19 @@
 		0204F2682CF90A240064E4A2 /* CustomTabButtonViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabButtonViewModel.swift; sourceTree = "<group>"; };
 		0204F26A2CF90C0F0064E4A2 /* Color+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extensions.swift"; sourceTree = "<group>"; };
 		0204F26D2CF90F8A0064E4A2 /* MockTabBarItems.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockTabBarItems.swift; sourceTree = "<group>"; };
+		0204F2732CF92F680064E4A2 /* CustomTabBar_SwiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CustomTabBar_SwiftUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0204F2752CF92F680064E4A2 /* CustomTabBar_SwiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBar_SwiftUITests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		0204F2422CF8EA450064E4A2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0204F2702CF92F680064E4A2 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -54,6 +74,7 @@
 			isa = PBXGroup;
 			children = (
 				0204F2472CF8EA450064E4A2 /* CustomTabBar_SwiftUI */,
+				0204F2742CF92F680064E4A2 /* CustomTabBar_SwiftUITests */,
 				0204F2462CF8EA450064E4A2 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -62,6 +83,7 @@
 			isa = PBXGroup;
 			children = (
 				0204F2452CF8EA450064E4A2 /* CustomTabBar_SwiftUI.app */,
+				0204F2732CF92F680064E4A2 /* CustomTabBar_SwiftUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -69,11 +91,11 @@
 		0204F2472CF8EA450064E4A2 /* CustomTabBar_SwiftUI */ = {
 			isa = PBXGroup;
 			children = (
-				0204F25D2CF8EF1F0064E4A2 /* Shared */,
+				0204F27C2CF92FA20064E4A2 /* App */,
 				0204F2562CF8EA5D0064E4A2 /* Model */,
 				0204F2572CF8EA630064E4A2 /* View */,
 				0204F2582CF8EA680064E4A2 /* ViewModel */,
-				0204F2482CF8EA450064E4A2 /* CustomTabBar_SwiftUIApp.swift */,
+				0204F25D2CF8EF1F0064E4A2 /* Shared */,
 				0204F24C2CF8EA460064E4A2 /* Assets.xcassets */,
 				0204F24E2CF8EA460064E4A2 /* Preview Content */,
 			);
@@ -150,6 +172,22 @@
 			path = MockData;
 			sourceTree = "<group>";
 		};
+		0204F2742CF92F680064E4A2 /* CustomTabBar_SwiftUITests */ = {
+			isa = PBXGroup;
+			children = (
+				0204F2752CF92F680064E4A2 /* CustomTabBar_SwiftUITests.swift */,
+			);
+			path = CustomTabBar_SwiftUITests;
+			sourceTree = "<group>";
+		};
+		0204F27C2CF92FA20064E4A2 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				0204F2482CF8EA450064E4A2 /* CustomTabBar_SwiftUIApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -170,6 +208,24 @@
 			productReference = 0204F2452CF8EA450064E4A2 /* CustomTabBar_SwiftUI.app */;
 			productType = "com.apple.product-type.application";
 		};
+		0204F2722CF92F680064E4A2 /* CustomTabBar_SwiftUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0204F2792CF92F680064E4A2 /* Build configuration list for PBXNativeTarget "CustomTabBar_SwiftUITests" */;
+			buildPhases = (
+				0204F26F2CF92F680064E4A2 /* Sources */,
+				0204F2702CF92F680064E4A2 /* Frameworks */,
+				0204F2712CF92F680064E4A2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0204F2782CF92F680064E4A2 /* PBXTargetDependency */,
+			);
+			name = CustomTabBar_SwiftUITests;
+			productName = CustomTabBar_SwiftUITests;
+			productReference = 0204F2732CF92F680064E4A2 /* CustomTabBar_SwiftUITests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -182,6 +238,10 @@
 				TargetAttributes = {
 					0204F2442CF8EA450064E4A2 = {
 						CreatedOnToolsVersion = 15.2;
+					};
+					0204F2722CF92F680064E4A2 = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = 0204F2442CF8EA450064E4A2;
 					};
 				};
 			};
@@ -199,6 +259,7 @@
 			projectRoot = "";
 			targets = (
 				0204F2442CF8EA450064E4A2 /* CustomTabBar_SwiftUI */,
+				0204F2722CF92F680064E4A2 /* CustomTabBar_SwiftUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -210,6 +271,13 @@
 			files = (
 				0204F2502CF8EA460064E4A2 /* Preview Assets.xcassets in Resources */,
 				0204F24D2CF8EA460064E4A2 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0204F2712CF92F680064E4A2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -234,7 +302,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		0204F26F2CF92F680064E4A2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0204F2762CF92F680064E4A2 /* CustomTabBar_SwiftUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0204F2782CF92F680064E4A2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0204F2442CF8EA450064E4A2 /* CustomTabBar_SwiftUI */;
+			targetProxy = 0204F2772CF92F680064E4A2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		0204F2512CF8EA460064E4A2 /* Debug */ = {
@@ -414,6 +498,42 @@
 			};
 			name = Release;
 		};
+		0204F27A2CF92F680064E4A2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 52QKBS98M2;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.vpn.CustomTabBar-SwiftUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CustomTabBar_SwiftUI.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/CustomTabBar_SwiftUI";
+			};
+			name = Debug;
+		};
+		0204F27B2CF92F680064E4A2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 52QKBS98M2;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.vpn.CustomTabBar-SwiftUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CustomTabBar_SwiftUI.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/CustomTabBar_SwiftUI";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -431,6 +551,15 @@
 			buildConfigurations = (
 				0204F2542CF8EA460064E4A2 /* Debug */,
 				0204F2552CF8EA460064E4A2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0204F2792CF92F680064E4A2 /* Build configuration list for PBXNativeTarget "CustomTabBar_SwiftUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0204F27A2CF92F680064E4A2 /* Debug */,
+				0204F27B2CF92F680064E4A2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
